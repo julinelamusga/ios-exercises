@@ -23,9 +23,9 @@
 }
 
 - (BOOL) integer:(NSInteger)integer1 isGreaterThan:(NSInteger)integer2 {
-    BOOL intOneLessThanIntTwo = (integer1 > integer2);
-    NSLog(intOneLessThanIntTwo ? @"Yes" : @"No");
-    return intOneLessThanIntTwo;
+    BOOL intOneGreaterThanIntTwo = (integer1 > integer2);
+    NSLog(intOneGreaterThanIntTwo ? @"Yes" : @"No");
+    return intOneGreaterThanIntTwo;
 }
 
 @end

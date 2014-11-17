@@ -16,8 +16,7 @@
 }
 
 - (NSString *) cheeseNameWithoutCheeseSuffix:(NSString *)cheeseName {
-    NSMutableString *mutableCheese;
-    [mutableCheese setString:cheeseName];
+    NSMutableString *mutableCheese = [[NSMutableString alloc] initWithString: cheeseName];
     [mutableCheese replaceOccurrencesOfString: (NSString *) @" cheese"
                                       withString: @""
                                          options: NSCaseInsensitiveSearch
