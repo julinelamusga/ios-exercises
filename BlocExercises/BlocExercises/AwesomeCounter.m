@@ -11,8 +11,23 @@
 @implementation AwesomeCounter
 
 - (NSString *) stringWithNumbersBetweenNumber:(NSInteger)number andOtherNumber: (NSInteger)otherNumber {
-    /* WORK HERE */
-    return @"";
+    NSMutableString *sequence = [@"" mutableCopy];
+    if (number < otherNumber) {
+        while (number <= otherNumber) {
+            [sequence appendFormat:@"%ld", (long)number];
+            number++;
+        }
+    }
+    else if (number > otherNumber) {
+        while (number >= otherNumber) {
+            [sequence appendFormat:@"%ld", (long)otherNumber];
+            otherNumber++;
+        }
+    }
+    else
+    [sequence appendFormat:@"%ld", (long)number];
+    
+    return sequence;
 }
 
 @end
