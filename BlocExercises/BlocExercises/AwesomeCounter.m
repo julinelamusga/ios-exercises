@@ -24,9 +24,9 @@
             otherNumber++;
         }
     }
-    else
+    else {
     [sequence appendFormat:@"%ld", (long)number];
-    
+    }
     return sequence;
 }
 
