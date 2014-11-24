@@ -196,8 +196,8 @@
 			isa = PBXGroup;
 			children = (
 				936964A81947C8C40021C271 /* StarTrekDictionaries.h */,
-				936964A91947C8C40021C271 /* StarTrekDictionaries.m */,
 				936964B11947E12D0021C271 /* StarTrekDictionariesTests.m */,
+				936964A91947C8C40021C271 /* StarTrekDictionaries.m */,
 			);
 			name = Dictionaries;
 			sourceTree = "<group>";
